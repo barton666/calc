@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="calculator-1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/calculator-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/calculator-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/calculator-1.0.jar!/META-INF/maven/com.epam.tat.module4" />
+    </SOURCES>
+  </library>
+</component>
