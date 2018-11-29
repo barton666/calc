@@ -17,4 +17,6 @@ public class Testsum {
     public void  testEquals6 (){
         Assert.assertEquals("Здесь должно быть 30",30, calculatortests.Sum(10, 20));
     }
+
+
 }
