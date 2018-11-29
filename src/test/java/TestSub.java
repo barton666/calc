@@ -1,7 +1,7 @@
 import org.junit.*;
 
 
-public class Testminus {
+public class TestSub {
 
     @Test
     public void testEquals1(){
