@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Testsum {
+public class TestSum {
 
     @Test
     public void testEquals4(){
