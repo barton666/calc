@@ -1,8 +1,10 @@
+import org.junit.experimental.categories.Categories;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
-@RunWith(Suite.class)
-@Suite.SuiteClasses({TestSub.class,TestSum.class})
+@RunWith(Categories.class)
+@Categories.IncludeCategory(SumSubCategory.class)
+@Suite.SuiteClasses({TestSum.class, TestSub.class})
 
 public class SuiteSumSubClass {
 }

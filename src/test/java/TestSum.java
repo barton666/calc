@@ -1,6 +1,8 @@
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
+@Category(SumSubCategory.class)
 public class TestSum {
 
     @Test
@@ -14,9 +16,8 @@ public class TestSum {
     }
 
     @Test
-    public void  testEquals6 (){
-        Assert.assertEquals("Здесь должно быть 30",30, calculatortests.Sum(10, 20));
+    public void testEquals6 (){
+        Assert.assertEquals("Здесь должно быть 458",458, calculatortests.Sum(7, 451));
+    }
     }
 
-
-}
