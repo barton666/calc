@@ -1,6 +1,10 @@
 import org.junit.*;
 import org.junit.experimental.categories.Category;
 
+/*
+Класс, содержащий тесты по проверке операции вычитания
+*/
+
 @Category(SumSubCategory.class)
 public class TestSub {
 
