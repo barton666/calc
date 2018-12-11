@@ -6,6 +6,10 @@ import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Arrays;
 
+/*
+Пример класса для реализации параметризированных тестов
+*/
+
 @RunWith(Parameterized.class)
 public class TestParameterized {
 

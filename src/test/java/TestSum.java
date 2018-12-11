@@ -2,6 +2,10 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
+/*
+Класс, содержащий тесты по проверке операции сложения
+*/
+
 @Category(SumSubCategory.class)
 public class TestSum {
 

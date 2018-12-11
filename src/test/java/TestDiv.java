@@ -5,6 +5,10 @@ import org.junit.experimental.categories.Category;
 
 import static junit.framework.TestCase.fail;
 
+/*
+Класс, содержащий тесты по проверке операции сложения
+*/
+
 @Category(MultDivCategory.class)
 public class TestDiv {
 
