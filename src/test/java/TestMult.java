@@ -1,7 +1,9 @@
 import com.epam.tat.module4.Calculator;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
+@Category(MultDivCategory.class)
 public class TestMult {
 
     @Test
@@ -16,9 +18,9 @@ public class TestMult {
         Assert.assertEquals( "Умножение на ноль",0, calc.mult(250, 0));
     }
 
-//    @Test
-//    public void Testmult3(){
-//        Calculator calc = new Calculator();
-//        Assert.assertEquals( "Умножение дробных чисел", 296.3336, calc.mult(15.37, 19.28), 0.01);
-//    }
+    @Test
+    public void Testmult3(){
+        Calculator calc = new Calculator();
+        Assert.assertEquals( "Умножение дробных чисел", 296.3336, calc.mult(15.37, 19.28), 0.001);
+    }
 }
