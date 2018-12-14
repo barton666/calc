@@ -1,3 +1,4 @@
+import com.epam.tat.module4.Calculator;
 import org.junit.*;
 import org.junit.experimental.categories.Category;
 
@@ -8,22 +9,29 @@ import org.junit.experimental.categories.Category;
 @Category(SumSubCategory.class)
 public class TestSub {
 
+    private Calculator calc;
+
+    @Before
+    public void before(){
+        calc = new Calculator();
+    }
+
     @Test
     public void testEquals1(){
 
-        Assert.assertEquals( "Здесь должно быть 5",5, calculatortests.Minus(10, 5));
+        Assert.assertEquals( "Вычитание целых положительных чисел",5, calc.sub(10, 5));
     }
 
 
     @Test
     public void testEquals2 (){
 
-        Assert.assertEquals("Здесь должно быть 40",40, calculatortests.Minus(27, -13));
+        Assert.assertEquals("Вычитание положительных и отрицательных целых чисел",40, calc.sub(27, -13));
     }
 
     @Test
     public void  testEquals3 (){
 
-        Assert.assertEquals("Здесь должно быть -10",-10, calculatortests.Minus(10, 20));
+        Assert.assertEquals("Вычитание дробных чисел",8.582, calc.sub(-135.1769, -143.7589), 0.0001);
     }
 }
