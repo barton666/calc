@@ -1,4 +1,6 @@
+import com.epam.tat.module4.Calculator;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -16,6 +18,7 @@ public class TestParameterized {
     private int valueA;
     private int valueB;
     private int expected;
+    private Calculator calc;
 
     public TestParameterized(int valueA, int valueB, int expected) {
         this.valueA = valueA;
@@ -34,9 +37,14 @@ public class TestParameterized {
         });
     }
 
+    @Before
+    public void before(){
+        calc = new Calculator();
+    }
+
     @Test
     public void ParamTest(){
-        Assert.assertEquals(expected, calculatortests.Sum(valueA, valueB));
+        Assert.assertEquals(expected, calc.sum(valueA, valueB));
     }
 }
 

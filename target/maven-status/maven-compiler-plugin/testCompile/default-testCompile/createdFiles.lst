@@ -1,4 +1,6 @@
 TestSub.class
+TestParameterized.class
+MultDivCategory.class
 SuiteMultDivClass.class
 TestMult.class
 MainSuiteClass.class
