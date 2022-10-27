@@ -20,7 +20,7 @@ public class TestMult {
 
     @Test
     public void Testmult1(){
-        Assert.assertEquals( "Умножение целых чисел",1125, calc.mult(25, 45));
+        Assert.assertEquals( "Умножение целых чисел",1126, calc.mult(25, 45));
     }
 
     @Test
